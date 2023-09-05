@@ -10,6 +10,7 @@
 ```
 ***
 ## Selecting:
+
 ```
 document.getElementById('stringIDOnHTML');
 document.getElementsByTagName('stringTagOnHTML');
@@ -37,6 +38,9 @@ document.querySelectorAll('p a'); //All a tags nested in p tags
 ```
 ***
 ## Manipulating
+
+```
+```
 ***
 
 
