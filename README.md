@@ -40,6 +40,27 @@ document.querySelectorAll('p a'); //All a tags nested in p tags
 ## Manipulating
 
 ```
+document.querySelector('p').innerText = 'lololol';
+//Replace all the innerText of first p tag with lololol!
+document.querySelector('p').textContent;
+//Get that p tag text
+```
+```
+document.querySelector('h1').innerHTML = '<i>RandomText</i>';
+document.querySelector('h1').innerHTML = '<span>Disgusting</span>';
+//Updating HTML, very useful!
+```
+```
+document.querySelector('#banner').id = 'newID';
+//Updated ID
+document.querySelector('#banner').src
+//Get source like URL for images!
+document.querySelector('Link').href
+//Oh I can change CSS elements with this!
+document.querySelector('img').src = 'https://devsprouthosting.com/images/chicken.jpg';
+document.querySelector('img').alt = 'chicken';
+//More e.g.
+
 ```
 ***
 
