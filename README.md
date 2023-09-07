@@ -60,7 +60,24 @@ document.querySelector('Link').href
 document.querySelector('img').src = 'https://devsprouthosting.com/images/chicken.jpg';
 document.querySelector('img').alt = 'chicken';
 //More e.g.
+```
+```
+document.querySelector('p').style.color = "red";
+//Styling
+document.querySelector('#container').style.textAlign='center';
+document.querySelector('img').style.width = "150px";
+document.querySelector('img').style.borderRadius = "50%";
+```
 
+```
+//Save your selected element
+const container = document.querySelector('#container');
+//iterate 100x
+for (let i = 0; i < 100; i++) {
+  const btn = document.createElement('button'); //make a button
+  btn.innerText = 'Click'; //Give it some text
+  container.appendChild(btn); //Append it!
+}
 ```
 ***
 
