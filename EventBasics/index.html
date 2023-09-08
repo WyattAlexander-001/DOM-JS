@@ -8,10 +8,20 @@
 </head>
 
 <body>
-    <h1>Events</h1>
-    <button onclick="alert('you clicked me!'); alert('stop clicking')">Click Me!</button>
+    <h1>Events IN JS!</h1>
+    <!--This is bad practice! since it is not DRY code-->
+    <button onclick="alert('you triggered this ALERT!'); alert('This is the 2nd and Last ALERT!')">Click Me! VERSION
+        1</button>
+    <!--Still bad form, but hey, we now can print to console!-->
+    <h1 onclick="console.log('boo')">Inline Events Suck...But I'm clickable TEXT</h1>
+    <button id="btn" onclick="console.log('clicked')">Check CONSOLE!</button>
+    <br>
+    <hr>
 
-    <button id="v2">Click Me (2nd version)</button>
+
+    <button id="v2">Click Me (2nd version, Not that good either!)</button>
+    <br>
+    <hr>
 
     <button id="v3">Click Me (3rd version)</button>
 
