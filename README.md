@@ -79,6 +79,7 @@ for (let i = 0; i < 100; i++) {
   container.appendChild(btn); //Append it!
 }
 ```
+***
 ## Event Listeners
 ```
 const helloBtn = document.querySelector('#hello');
