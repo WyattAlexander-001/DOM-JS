@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+</head>
+<body>
+
+<h2>Text changer</h2>
+
+<p id="demo">This text will change.</p>
+
+<button type="button" onclick="myFunction()">Try it, CLICK ME!</button>
+
+<script>
+    let isChanged = false; 
+    function myFunction() {
+        // get the paragraph element
+        const paragraph = document.getElementById("demo");
+        // check if text has been changed
+        if (isChanged === true) {
+            paragraph.innerHTML = "This text will change.";
+        } else {
+            paragraph.innerHTML = "Paragraph changed.";
+        }
+        isChanged = !isChanged;
+    }
+    </script>
+</body>
+</html> 
