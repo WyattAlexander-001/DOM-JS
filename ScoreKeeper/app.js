@@ -11,10 +11,9 @@ const p2 = {
 }
 //-------------------------------
 
-//Reset Logic
+//Reset Logic (select HTML)
 const resetButton = document.querySelector('#reset');
-resetButton.addEventListener('click', reset)
-
+//Logic
 function reset() {
     isGameOver = false;
     for (let p of [p1, p2]) {
@@ -24,6 +23,8 @@ function reset() {
         p.button.disabled = false;
     }
 }
+//Attach the 'reset' function to the click event of the "reset" button
+resetButton.addEventListener('click', reset)
 //--------------------------
 
 const winningScoreSelect = document.querySelector('#playto');
