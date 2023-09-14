@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First Web Page</h2>
+<p>My First Paragraph.</p>
+
+<p id="demo">PlaceHolder text</p>
+<p id="demo2">PlaceHolder text</p>
+<hr>
+
+<p class="demo3">dlsjfgfl;j</p>
+<p class="demo3">dlsjfgfl;j</p>
+<p class="demo3">dlsjfgfl;j</p>
+<p class="demo3">dlsjfgfl;j</p>
+<p class="demo3">dlsjfgfl;j</p>
+<p class="demo3">dlsjfgfl;j</p>
+
+
+
+
+<script>
+document.getElementById("demo").innerHTML = 5 + 900440;
+document.querySelector("#demo2").innerHTML = 777;
+//Same Thing!
+
+//Selecting All Requires a For Loop
+const nodeList = document.querySelectorAll(".demo3");
+for (let i = 0; i < nodeList.length; i++) {
+  nodeList[i].style.backgroundColor = "red";
+  nodeList[i].innerHTML = `Classes Rule Number: ${i}`;
+}
+</script>
+
+</body>
+</html>
+
+
