@@ -1,14 +1,19 @@
 # DOM-JS
+
 ## Notes:
+
 - There's a lot you won't use
 - DOM = Document Object Model!
 - Our window into a webpage through JS!
-- first example, document.all 
+- first example, document.all
+
 ```
-    document.all[11].innerText = "WYATT!!!" 
+    document.all[11].innerText = "WYATT!!!"
     //Will replace a word at index 11 with my new string.
 ```
-***
+
+---
+
 ## Selecting:
 
 ```
@@ -17,12 +22,17 @@ document.getElementsByTagName('stringTagOnHTML');
 //Returns an html collection, but it is NOT an array
 document.getElementsByClassName('stringClassOnHTML');
 ```
+
 ### E.g.
+
 ```
 document.getElementById('banner');
 ```
-***
+
+---
+
 ## Newer Way Of Selecting, Finds FIRST element
+
 ```
 document.querySelector('h1');
 document.querySelector('#idYouWant');
@@ -30,13 +40,16 @@ document.querySelector('.classYouWant');
 ```
 
 ## Newer Way of Selecting, Returns A Collection Of Matching Elements
+
 ```
 document.querySelectorAll('h1');
 document.querySelectorAll('#idYouWant');
 document.querySelectorAll('.classYouWant');
 document.querySelectorAll('p a'); //All a tags nested in p tags
 ```
-***
+
+---
+
 ## Manipulating
 
 ```
@@ -45,11 +58,13 @@ document.querySelector('p').innerText = 'lololol';
 document.querySelector('p').textContent;
 //Get that p tag text
 ```
+
 ```
 document.querySelector('h1').innerHTML = '<i>RandomText</i>';
 document.querySelector('h1').innerHTML = '<span>Disgusting</span>';
 //Updating HTML, very useful!
 ```
+
 ```
 document.querySelector('#banner').id = 'newID';
 //Updated ID
@@ -61,6 +76,7 @@ document.querySelector('img').src = 'https://devsprouthosting.com/images/chicken
 document.querySelector('img').alt = 'chicken';
 //More e.g.
 ```
+
 ```
 document.querySelector('p').style.color = "red";
 //Styling
@@ -79,8 +95,11 @@ for (let i = 0; i < 100; i++) {
   container.appendChild(btn); //Append it!
 }
 ```
-***
+
+---
+
 ## Event Listeners
+
 ```
 const helloBtn = document.querySelector('#hello');
 helloBtn.addEventListener('click', function () {
@@ -91,6 +110,7 @@ goodbyeBtn.addEventListener('click', function () {
     console.log("goodbye");
 });
 ```
-***
 
+---
 
+- Note to myself, added this line on Gnome
